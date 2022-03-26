@@ -64,6 +64,6 @@ app.get('/about', function (req, res) {
   res.sendStatus(200);
 });
 
-app.listen(9000, function () {
+app.listen(process.env.PORT || 3000, function(){
   console.log('Example app listening on port 9000!');
 });
